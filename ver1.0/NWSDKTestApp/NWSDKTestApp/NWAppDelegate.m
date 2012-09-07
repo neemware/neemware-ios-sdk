@@ -19,8 +19,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-#warning Please be sure to set this API key to your own - get one at http://app.neemware.com
-    [Neemware loadWithApiKey:@"212906882c9db5e0c259b0d47517e258"];
+#warning Please be sure to set this API key to one of your own - get one at http://app.neemware.com
+    [Neemware loadWithApiKey:@"YOUR_API_KEY_HERE"];
     
     // Register for Neemware update notifications
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(neemwareUpdated) name:@"kNWInboxDataDidLoadNotification" object:nil];
