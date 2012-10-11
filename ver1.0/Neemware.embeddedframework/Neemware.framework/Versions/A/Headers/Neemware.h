@@ -14,7 +14,8 @@
 }
 
 /**
- * This init method must be called before using Neemware SDK using key/secret from Neemware website
+ * This method must be called before using the Neemware SDK
+ * sing key/secret from Neemware website
  * This method should only be called once, typically in application:didFinishLaunchingWithOptions
  * This method must be called before any other Neemware methods are called
  */
@@ -65,8 +66,4 @@
 // it is displayed or not
 +(void)showBannerInViewController:(UIViewController *)vController;
 +(void)showBannerInViewController:(UIViewController *)vController withDelay:(NSInteger)delay;
-/////////////
-// Feedback stuff
-//
-+(void)showFeedbackFormIn:(UIViewController *)vController;
 @end
