@@ -54,7 +54,7 @@
 // Typical usage within a UIViewController will be [Neemware displayInboxFrom:self];
 + (void)            displayInboxFrom:(UIViewController *)vc;
 
-// For more iPad customizations
+// For more options, or for displaying on an iPad
 + (void)            displayInboxFrom:(UIViewController *)vc
                         withModalTransitionStyle:(UIModalTransitionStyle)ts
                             modalPresentationStyle:(UIModalPresentationStyle)ps
