@@ -42,7 +42,7 @@
 
 ////////////////////////////////////////////////////////////
 
-// This section for inbox-specific things
+// Inbox-related methods
 //
 //  Accessors
 //
@@ -53,6 +53,12 @@
 // Wire this method up to anything you want and it will display the Message Center
 // Typical usage within a UIViewController will be [Neemware displayInboxFrom:self];
 + (void)            displayInboxFrom:(UIViewController *)vc;
+
+// For more iPad customizations
++ (void)            displayInboxFrom:(UIViewController *)vc
+                        withModalTransitionStyle:(UIModalTransitionStyle)ts
+                            modalPresentationStyle:(UIModalPresentationStyle)ps
+                                animation:(BOOL)animated;
 
 ////////////////////////////////////////////////////////////
 
