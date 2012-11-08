@@ -17,7 +17,7 @@
 // want to call [self dismissModalViewController];
 // or [self dismissViewControllerAnimated:completion:]
 // or whatever is appropriate in your code
--(void)dismissInbox;
+- (void)dismissInbox;
 
 @end
 

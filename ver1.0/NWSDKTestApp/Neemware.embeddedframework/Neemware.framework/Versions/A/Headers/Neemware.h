@@ -8,18 +8,29 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Neemware : NSObject {
-    NSString*       _apiKey;
-    NSDictionary*   _locationData;
-}
+@interface Neemware : NSObject
 
 /**
- * This method must be called before using the Neemware SDK
- * sing key/secret from Neemware website
- * This method should only be called once, typically in application:didFinishLaunchingWithOptions
+ * This method must be called before using the Neemware SDK, typically
+ * in application:didFinishLaunchingWithOptions.
  * This method must be called before any other Neemware methods are called
+ * Get your API key at http://www.neemware.com
  */
 + (void)loadWithApiKey:(NSString *)apiKey;
+
+/**
+ * Use this method in place of the shorter (recommended) initializer above if you want to control
+ * the polling interval, or turn it off entirely.  The default initializer will send a lightweight request
+ * to Neemware's servers every 30 seconds for near-realtime updates.  
+ * To turn off polling entirely, set |interval| to 0
+ */
++ (void)loadWithApiKey:(NSString *)apiKey pollInterval:(NSInteger)interval;
+
+/**
+ * If you turn off polling entirely, then you can use this method to manually trigger an update
+ * This method should only be used if you pass 0 to |interval| in the method above.
+ */
++ (void)refreshData;
 
 /**
  * Use these methods to set (optional) custom properties
