@@ -18,17 +18,14 @@
  */
 + (void)loadWithApiKey:(NSString *)apiKey;
 
-/**
- * Use this method in place of the shorter (recommended) initializer above if you want to control
- * the polling interval, or turn it off entirely.  The default initializer will send a lightweight request
- * to Neemware's servers every 30 seconds for near-realtime updates.  
- * To turn off polling entirely, set |interval| to 0
+/*
+ * Enable or disable loading new data when app becomes active
+ * Defaults to YES
  */
-+ (void)loadWithApiKey:(NSString *)apiKey pollInterval:(NSInteger)interval;
++ (void)setRefreshDataOnLoad:(BOOL)refresh;
 
 /**
- * If you turn off polling entirely, then you can use this method to manually trigger an update
- * This method should only be used if you pass 0 to |interval| in the method above.
+ * Use this method to manually trigger an update of the Neemware data
  */
 + (void)refreshData;
 
@@ -50,6 +47,7 @@
 + (NSString *)      latitude;
 + (NSString *)      longitude;
 + (NSString *)      version;
++ (BOOL)            refreshDataOnLoad;
 
 
 ////////////////////////////////////////////////////////////
