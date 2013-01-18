@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA32A26D16A0D0FF00A5B03F /* Neemware.h in Headers */ = {isa = PBXBuildFile; fileRef = EA930EDD15E4028F00472ADD /* Neemware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA32A26E16A0D1E100A5B03F /* NWInboxTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EA930ED915E4028F00472ADD /* NWInboxTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA32A26F16A0D1E100A5B03F /* NWFeedbackViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EA930F2515E4028F00472ADD /* NWFeedbackViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA32A28016A0D86B00A5B03F /* NWFeedbackViewController.xib in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA930F2715E4028F00472ADD /* NWFeedbackViewController.xib */; };
+		EA32A28116A0D86B00A5B03F /* bad-smiley-off.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1A98167C035700FCCDB1 /* bad-smiley-off.png */; };
+		EA32A28216A0D86B00A5B03F /* bad-smiley-off@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1A99167C035700FCCDB1 /* bad-smiley-off@2x.png */; };
+		EA32A28316A0D86B00A5B03F /* bad-smiley-on.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1A9A167C035700FCCDB1 /* bad-smiley-on.png */; };
+		EA32A28416A0D86B00A5B03F /* bad-smiley-on@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1A9B167C035700FCCDB1 /* bad-smiley-on@2x.png */; };
+		EA32A28516A0D86B00A5B03F /* great-smiley-off.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1A9C167C035700FCCDB1 /* great-smiley-off.png */; };
+		EA32A28616A0D86B00A5B03F /* great-smiley-off@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1A9D167C035700FCCDB1 /* great-smiley-off@2x.png */; };
+		EA32A28716A0D86B00A5B03F /* great-smiley-on.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1A9E167C035700FCCDB1 /* great-smiley-on.png */; };
+		EA32A28816A0D86B00A5B03F /* great-smiley-on@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1A9F167C035700FCCDB1 /* great-smiley-on@2x.png */; };
+		EA32A28916A0D86B00A5B03F /* ok-smiley-off.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1AA0167C035700FCCDB1 /* ok-smiley-off.png */; };
+		EA32A28A16A0D86B00A5B03F /* ok-smiley-off@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1AA1167C035700FCCDB1 /* ok-smiley-off@2x.png */; };
+		EA32A28B16A0D86B00A5B03F /* ok-smiley-on.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1AA2167C035700FCCDB1 /* ok-smiley-on.png */; };
+		EA32A28C16A0D86B00A5B03F /* ok-smiley-on@2x.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAAB1AA3167C035700FCCDB1 /* ok-smiley-on@2x.png */; };
+		EA32A28D16A0D86B00A5B03F /* speaker_24.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA930ED315E4028F00472ADD /* speaker_24.png */; };
+		EAA1850616A0CBB100BB3C61 /* Neemware.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930EDE15E4028F00472ADD /* Neemware.m */; };
+		EAA1850816A0CBB100BB3C61 /* NWInboxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930ED815E4028F00472ADD /* NWInboxCell.m */; };
+		EAA1850A16A0CBB100BB3C61 /* NWInboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930EDA15E4028F00472ADD /* NWInboxTableViewController.m */; };
+		EAA1850C16A0CBB100BB3C61 /* NWConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930EE215E4028F00472ADD /* NWConnection.m */; };
+		EAA1850E16A0CBB100BB3C61 /* NWFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930EE415E4028F00472ADD /* NWFeedback.m */; };
+		EAA1851116A0CBB100BB3C61 /* NWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930EE715E4028F00472ADD /* NWObject.m */; };
+		EAA1851316A0CBB100BB3C61 /* NWFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930F2615E4028F00472ADD /* NWFeedbackViewController.m */; };
+		EAA1851416A0CBB100BB3C61 /* NWFeedbackViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = EA930F2715E4028F00472ADD /* NWFeedbackViewController.xib */; };
+		EAA1851616A0CBB100BB3C61 /* SSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9147061672B28A0028E37C /* SSTextView.m */; };
+		EAA1851816A0CBB100BB3C61 /* NW_JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930F0515E4028F00472ADD /* NW_JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAA1851A16A0CBB100BB3C61 /* NW_MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930F0815E4028F00472ADD /* NW_MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAA1852816A0CBB100BB3C61 /* NWBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930ECC15E4028F00472ADD /* NWBannerView.m */; };
+		EAA1852A16A0CBB100BB3C61 /* NWContentData.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930ECF15E4028F00472ADD /* NWContentData.m */; };
+		EAA1852C16A0CBB100BB3C61 /* NWContentDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930ED115E4028F00472ADD /* NWContentDataStore.m */; };
+		EAA1852F16A0CBB100BB3C61 /* NWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930F2C15E4028F00472ADD /* NWWebViewController.m */; };
+		EAA1853116A0CBB100BB3C61 /* NWOpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930F2A15E4028F00472ADD /* NWOpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAA1853316A0CBB100BB3C61 /* NW_DTCustomColoredAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930ED615E4028F00472ADD /* NW_DTCustomColoredAccessory.m */; };
+		EAA1853516A0CBB100BB3C61 /* NW_SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EA930EDC15E4028F00472ADD /* NW_SVPullToRefresh.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA3F71E316A0C9CD00235E1F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				EA32A28016A0D86B00A5B03F /* NWFeedbackViewController.xib in CopyFiles */,
+				EA32A28116A0D86B00A5B03F /* bad-smiley-off.png in CopyFiles */,
+				EA32A28216A0D86B00A5B03F /* bad-smiley-off@2x.png in CopyFiles */,
+				EA32A28316A0D86B00A5B03F /* bad-smiley-on.png in CopyFiles */,
+				EA32A28416A0D86B00A5B03F /* bad-smiley-on@2x.png in CopyFiles */,
+				EA32A28516A0D86B00A5B03F /* great-smiley-off.png in CopyFiles */,
+				EA32A28616A0D86B00A5B03F /* great-smiley-off@2x.png in CopyFiles */,
+				EA32A28716A0D86B00A5B03F /* great-smiley-on.png in CopyFiles */,
+				EA32A28816A0D86B00A5B03F /* great-smiley-on@2x.png in CopyFiles */,
+				EA32A28916A0D86B00A5B03F /* ok-smiley-off.png in CopyFiles */,
+				EA32A28A16A0D86B00A5B03F /* ok-smiley-off@2x.png in CopyFiles */,
+				EA32A28B16A0D86B00A5B03F /* ok-smiley-on.png in CopyFiles */,
+				EA32A28C16A0D86B00A5B03F /* ok-smiley-on@2x.png in CopyFiles */,
+				EA32A28D16A0D86B00A5B03F /* speaker_24.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA3F71E516A0C9CD00235E1F /* libNeemware.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNeemware.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6E753015E409D6004AF58B /* LoadableCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadableCategory.h; path = Inbox/LoadableCategory.h; sourceTree = "<group>"; };
+		EA9147051672B28A0028E37C /* SSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTextView.h; sourceTree = "<group>"; };
+		EA9147061672B28A0028E37C /* SSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTextView.m; sourceTree = "<group>"; };
+		EA930EC015E4025300472ADD /* Neemware-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Neemware-Info.plist"; sourceTree = "<group>"; };
+		EA930EC215E4025300472ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA930EC415E4025300472ADD /* Neemware-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Neemware-Prefix.pch"; sourceTree = "<group>"; };
+		EA930ECB15E4028F00472ADD /* NWBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWBannerView.h; sourceTree = "<group>"; };
+		EA930ECC15E4028F00472ADD /* NWBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWBannerView.m; sourceTree = "<group>"; };
+		EA930ECE15E4028F00472ADD /* NWContentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWContentData.h; sourceTree = "<group>"; };
+		EA930ECF15E4028F00472ADD /* NWContentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWContentData.m; sourceTree = "<group>"; };
+		EA930ED015E4028F00472ADD /* NWContentDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWContentDataStore.h; sourceTree = "<group>"; };
+		EA930ED115E4028F00472ADD /* NWContentDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWContentDataStore.m; sourceTree = "<group>"; };
+		EA930ED315E4028F00472ADD /* speaker_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker_24.png; sourceTree = "<group>"; };
+		EA930ED515E4028F00472ADD /* NW_DTCustomColoredAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NW_DTCustomColoredAccessory.h; path = Inbox/NW_DTCustomColoredAccessory.h; sourceTree = "<group>"; };
+		EA930ED615E4028F00472ADD /* NW_DTCustomColoredAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NW_DTCustomColoredAccessory.m; path = Inbox/NW_DTCustomColoredAccessory.m; sourceTree = "<group>"; };
+		EA930ED715E4028F00472ADD /* NWInboxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWInboxCell.h; sourceTree = "<group>"; };
+		EA930ED815E4028F00472ADD /* NWInboxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWInboxCell.m; sourceTree = "<group>"; };
+		EA930ED915E4028F00472ADD /* NWInboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWInboxTableViewController.h; sourceTree = "<group>"; };
+		EA930EDA15E4028F00472ADD /* NWInboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWInboxTableViewController.m; sourceTree = "<group>"; };
+		EA930EDB15E4028F00472ADD /* NW_SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NW_SVPullToRefresh.h; path = Inbox/NW_SVPullToRefresh.h; sourceTree = "<group>"; };
+		EA930EDC15E4028F00472ADD /* NW_SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NW_SVPullToRefresh.m; path = Inbox/NW_SVPullToRefresh.m; sourceTree = "<group>"; };
+		EA930EDD15E4028F00472ADD /* Neemware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neemware.h; sourceTree = "<group>"; };
+		EA930EDE15E4028F00472ADD /* Neemware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Neemware.m; sourceTree = "<group>"; };
+		EA930EE115E4028F00472ADD /* NWConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWConnection.h; sourceTree = "<group>"; };
+		EA930EE215E4028F00472ADD /* NWConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWConnection.m; sourceTree = "<group>"; };
+		EA930EE315E4028F00472ADD /* NWFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWFeedback.h; sourceTree = "<group>"; };
+		EA930EE415E4028F00472ADD /* NWFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWFeedback.m; sourceTree = "<group>"; };
+		EA930EE515E4028F00472ADD /* NWFeedbackConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWFeedbackConstants.h; sourceTree = "<group>"; };
+		EA930EE615E4028F00472ADD /* NWObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWObject.h; sourceTree = "<group>"; };
+		EA930EE715E4028F00472ADD /* NWObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWObject.m; sourceTree = "<group>"; };
+		EA930F0415E4028F00472ADD /* NW_JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NW_JSONKit.h; sourceTree = "<group>"; };
+		EA930F0515E4028F00472ADD /* NW_JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NW_JSONKit.m; sourceTree = "<group>"; };
+		EA930F0715E4028F00472ADD /* NW_MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NW_MBProgressHUD.h; sourceTree = "<group>"; };
+		EA930F0815E4028F00472ADD /* NW_MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NW_MBProgressHUD.m; sourceTree = "<group>"; };
+		EA930F2515E4028F00472ADD /* NWFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWFeedbackViewController.h; sourceTree = "<group>"; };
+		EA930F2615E4028F00472ADD /* NWFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWFeedbackViewController.m; sourceTree = "<group>"; };
+		EA930F2715E4028F00472ADD /* NWFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NWFeedbackViewController.xib; path = Neemware/NWFeedbackSDK/UI/NWFeedbackViewController.xib; sourceTree = SOURCE_ROOT; };
+		EA930F2915E4028F00472ADD /* NWOpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NWOpenUDID.h; path = Utility/NWOpenUDID.h; sourceTree = "<group>"; };
+		EA930F2A15E4028F00472ADD /* NWOpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NWOpenUDID.m; path = Utility/NWOpenUDID.m; sourceTree = "<group>"; };
+		EA930F2B15E4028F00472ADD /* NWWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWWebViewController.h; sourceTree = "<group>"; };
+		EA930F2C15E4028F00472ADD /* NWWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWWebViewController.m; sourceTree = "<group>"; };
+		EAAB1A98167C035700FCCDB1 /* bad-smiley-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bad-smiley-off.png"; sourceTree = "<group>"; };
+		EAAB1A99167C035700FCCDB1 /* bad-smiley-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bad-smiley-off@2x.png"; sourceTree = "<group>"; };
+		EAAB1A9A167C035700FCCDB1 /* bad-smiley-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bad-smiley-on.png"; sourceTree = "<group>"; };
+		EAAB1A9B167C035700FCCDB1 /* bad-smiley-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bad-smiley-on@2x.png"; sourceTree = "<group>"; };
+		EAAB1A9C167C035700FCCDB1 /* great-smiley-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "great-smiley-off.png"; sourceTree = "<group>"; };
+		EAAB1A9D167C035700FCCDB1 /* great-smiley-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "great-smiley-off@2x.png"; sourceTree = "<group>"; };
+		EAAB1A9E167C035700FCCDB1 /* great-smiley-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "great-smiley-on.png"; sourceTree = "<group>"; };
+		EAAB1A9F167C035700FCCDB1 /* great-smiley-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "great-smiley-on@2x.png"; sourceTree = "<group>"; };
+		EAAB1AA0167C035700FCCDB1 /* ok-smiley-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-smiley-off.png"; sourceTree = "<group>"; };
+		EAAB1AA1167C035700FCCDB1 /* ok-smiley-off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-smiley-off@2x.png"; sourceTree = "<group>"; };
+		EAAB1AA2167C035700FCCDB1 /* ok-smiley-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-smiley-on.png"; sourceTree = "<group>"; };
+		EAAB1AA3167C035700FCCDB1 /* ok-smiley-on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-smiley-on@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA3F71E216A0C9CD00235E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA60D0221603BD5D00D779C0 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				EA930F2915E4028F00472ADD /* NWOpenUDID.h */,
+				EA930F2A15E4028F00472ADD /* NWOpenUDID.m */,
+				EA930ED515E4028F00472ADD /* NW_DTCustomColoredAccessory.h */,
+				EA930ED615E4028F00472ADD /* NW_DTCustomColoredAccessory.m */,
+				EA930EDB15E4028F00472ADD /* NW_SVPullToRefresh.h */,
+				EA930EDC15E4028F00472ADD /* NW_SVPullToRefresh.m */,
+				EA6E753015E409D6004AF58B /* LoadableCategory.h */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		EA91470A1672B2940028E37C /* SSTextView */ = {
+			isa = PBXGroup;
+			children = (
+				EA9147051672B28A0028E37C /* SSTextView.h */,
+				EA9147061672B28A0028E37C /* SSTextView.m */,
+			);
+			name = SSTextView;
+			sourceTree = "<group>";
+		};
+		EA930EAC15E4025300472ADD = {
+			isa = PBXGroup;
+			children = (
+				EA930EBE15E4025300472ADD /* Neemware */,
+				EAE07BA616A0C90100E0542D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA930EBE15E4025300472ADD /* Neemware */ = {
+			isa = PBXGroup;
+			children = (
+				EA930EDD15E4028F00472ADD /* Neemware.h */,
+				EA930EDE15E4028F00472ADD /* Neemware.m */,
+				EA930ED415E4028F00472ADD /* Inbox */,
+				EA930EDF15E4028F00472ADD /* NWFeedbackSDK */,
+				EA930ECA15E4028F00472ADD /* Banner */,
+				EA930ECD15E4028F00472ADD /* Data */,
+				EA930ED215E4028F00472ADD /* Images */,
+				EA930F2815E4028F00472ADD /* Utility */,
+				EA60D0221603BD5D00D779C0 /* External */,
+				EA930EBF15E4025300472ADD /* Supporting Files */,
+			);
+			path = Neemware;
+			sourceTree = "<group>";
+		};
+		EA930EBF15E4025300472ADD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA930EC015E4025300472ADD /* Neemware-Info.plist */,
+				EA930EC115E4025300472ADD /* InfoPlist.strings */,
+				EA930EC415E4025300472ADD /* Neemware-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA930ECA15E4028F00472ADD /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				EA930ECB15E4028F00472ADD /* NWBannerView.h */,
+				EA930ECC15E4028F00472ADD /* NWBannerView.m */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		EA930ECD15E4028F00472ADD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EA930ECE15E4028F00472ADD /* NWContentData.h */,
+				EA930ECF15E4028F00472ADD /* NWContentData.m */,
+				EA930ED015E4028F00472ADD /* NWContentDataStore.h */,
+				EA930ED115E4028F00472ADD /* NWContentDataStore.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EA930ED215E4028F00472ADD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EA930ED315E4028F00472ADD /* speaker_24.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EA930ED415E4028F00472ADD /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				EA930ED715E4028F00472ADD /* NWInboxCell.h */,
+				EA930ED815E4028F00472ADD /* NWInboxCell.m */,
+				EA930ED915E4028F00472ADD /* NWInboxTableViewController.h */,
+				EA930EDA15E4028F00472ADD /* NWInboxTableViewController.m */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		EA930EDF15E4028F00472ADD /* NWFeedbackSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EA930EE015E4028F00472ADD /* Core */,
+				EA930F2415E4028F00472ADD /* UI */,
+				EA930EE815E4028F00472ADD /* External */,
+				EA930F0B15E4028F00472ADD /* Resources */,
+			);
+			path = NWFeedbackSDK;
+			sourceTree = "<group>";
+		};
+		EA930EE015E4028F00472ADD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EA930EE115E4028F00472ADD /* NWConnection.h */,
+				EA930EE215E4028F00472ADD /* NWConnection.m */,
+				EA930EE315E4028F00472ADD /* NWFeedback.h */,
+				EA930EE415E4028F00472ADD /* NWFeedback.m */,
+				EA930EE515E4028F00472ADD /* NWFeedbackConstants.h */,
+				EA930EE615E4028F00472ADD /* NWObject.h */,
+				EA930EE715E4028F00472ADD /* NWObject.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EA930EE815E4028F00472ADD /* External */ = {
+			isa = PBXGroup;
+			children = (
+				EA91470A1672B2940028E37C /* SSTextView */,
+				EA930F0315E4028F00472ADD /* JSONKit */,
+				EA930F0615E4028F00472ADD /* MBProgressHUD */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		EA930F0315E4028F00472ADD /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				EA930F0415E4028F00472ADD /* NW_JSONKit.h */,
+				EA930F0515E4028F00472ADD /* NW_JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		EA930F0615E4028F00472ADD /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				EA930F0715E4028F00472ADD /* NW_MBProgressHUD.h */,
+				EA930F0815E4028F00472ADD /* NW_MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		EA930F0B15E4028F00472ADD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAAB1A98167C035700FCCDB1 /* bad-smiley-off.png */,
+				EAAB1A99167C035700FCCDB1 /* bad-smiley-off@2x.png */,
+				EAAB1A9A167C035700FCCDB1 /* bad-smiley-on.png */,
+				EAAB1A9B167C035700FCCDB1 /* bad-smiley-on@2x.png */,
+				EAAB1A9C167C035700FCCDB1 /* great-smiley-off.png */,
+				EAAB1A9D167C035700FCCDB1 /* great-smiley-off@2x.png */,
+				EAAB1A9E167C035700FCCDB1 /* great-smiley-on.png */,
+				EAAB1A9F167C035700FCCDB1 /* great-smiley-on@2x.png */,
+				EAAB1AA0167C035700FCCDB1 /* ok-smiley-off.png */,
+				EAAB1AA1167C035700FCCDB1 /* ok-smiley-off@2x.png */,
+				EAAB1AA2167C035700FCCDB1 /* ok-smiley-on.png */,
+				EAAB1AA3167C035700FCCDB1 /* ok-smiley-on@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA930F2415E4028F00472ADD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EA930F2515E4028F00472ADD /* NWFeedbackViewController.h */,
+				EA930F2615E4028F00472ADD /* NWFeedbackViewController.m */,
+				EA930F2715E4028F00472ADD /* NWFeedbackViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EA930F2815E4028F00472ADD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EA930F2B15E4028F00472ADD /* NWWebViewController.h */,
+				EA930F2C15E4028F00472ADD /* NWWebViewController.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EAE07BA616A0C90100E0542D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA3F71E516A0C9CD00235E1F /* libNeemware.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EA32A26C16A0D0F600A5B03F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA32A26D16A0D0FF00A5B03F /* Neemware.h in Headers */,
+				EA32A26E16A0D1E100A5B03F /* NWInboxTableViewController.h in Headers */,
+				EA32A26F16A0D1E100A5B03F /* NWFeedbackViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EA3F71E416A0C9CD00235E1F /* Neemware */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA3F71EE16A0C9CD00235E1F /* Build configuration list for PBXNativeTarget "Neemware" */;
+			buildPhases = (
+				EA3F71E116A0C9CD00235E1F /* Sources */,
+				EA3F71E216A0C9CD00235E1F /* Frameworks */,
+				EA3F71E316A0C9CD00235E1F /* CopyFiles */,
+				EA32A26C16A0D0F600A5B03F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Neemware;
+			productName = Neemware;
+			productReference = EA3F71E516A0C9CD00235E1F /* libNeemware.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA930EAE15E4025300472ADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Neemware, Inc.";
+			};
+			buildConfigurationList = EA930EB115E4025300472ADD /* Build configuration list for PBXProject "Neemware" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA930EAC15E4025300472ADD;
+			productRefGroup = EAE07BA616A0C90100E0542D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA3F71E416A0C9CD00235E1F /* Neemware */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA3F71E116A0C9CD00235E1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA1850616A0CBB100BB3C61 /* Neemware.m in Sources */,
+				EAA1850816A0CBB100BB3C61 /* NWInboxCell.m in Sources */,
+				EAA1850A16A0CBB100BB3C61 /* NWInboxTableViewController.m in Sources */,
+				EAA1850C16A0CBB100BB3C61 /* NWConnection.m in Sources */,
+				EAA1850E16A0CBB100BB3C61 /* NWFeedback.m in Sources */,
+				EAA1851116A0CBB100BB3C61 /* NWObject.m in Sources */,
+				EAA1851316A0CBB100BB3C61 /* NWFeedbackViewController.m in Sources */,
+				EAA1851416A0CBB100BB3C61 /* NWFeedbackViewController.xib in Sources */,
+				EAA1851616A0CBB100BB3C61 /* SSTextView.m in Sources */,
+				EAA1851816A0CBB100BB3C61 /* NW_JSONKit.m in Sources */,
+				EAA1851A16A0CBB100BB3C61 /* NW_MBProgressHUD.m in Sources */,
+				EAA1852816A0CBB100BB3C61 /* NWBannerView.m in Sources */,
+				EAA1852A16A0CBB100BB3C61 /* NWContentData.m in Sources */,
+				EAA1852C16A0CBB100BB3C61 /* NWContentDataStore.m in Sources */,
+				EAA1852F16A0CBB100BB3C61 /* NWWebViewController.m in Sources */,
+				EAA1853116A0CBB100BB3C61 /* NWOpenUDID.m in Sources */,
+				EAA1853316A0CBB100BB3C61 /* NW_DTCustomColoredAccessory.m in Sources */,
+				EAA1853516A0CBB100BB3C61 /* NW_SVPullToRefresh.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA930EC115E4025300472ADD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA930EC215E4025300472ADD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA3F71EF16A0C9CD00235E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				DSTROOT = /tmp/Neemware.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Neemware/Neemware-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EA3F71F016A0C9CD00235E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				DSTROOT = /tmp/Neemware.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Neemware/Neemware-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EA930EC515E4025300472ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		EA930EC615E4025300472ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA3F71EE16A0C9CD00235E1F /* Build configuration list for PBXNativeTarget "Neemware" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA3F71EF16A0C9CD00235E1F /* Debug */,
+				EA3F71F016A0C9CD00235E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA930EB115E4025300472ADD /* Build configuration list for PBXProject "Neemware" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA930EC515E4025300472ADD /* Debug */,
+				EA930EC615E4025300472ADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA930EAE15E4025300472ADD /* Project object */;
+}
